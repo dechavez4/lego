@@ -1,0 +1,142 @@
+*{
+	padding: 0;
+	margin:0 auto;
+	box-sizing: border-box;
+}
+
+.clearfix{
+ &::after {
+   display: block; content: "";
+   clear: both;
+ }
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	text-align: center;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+  min-height: 100%;
+}
+
+
+/*css til forsiden*/
+section{
+min-height: 916px;
+}
+
+.side1{
+background-image:url("image/lego_side2.jpg");
+background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ opacity: 0.95;
+ filter: alpha(opacity=50);
+}
+
+.side2{
+	background-image:url("image/background_login.jpg");
+	background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 border-left: 7px dashed black;
+}
+
+.side2 h1{
+	text-align: center;
+}
+
+.side2_form{
+border: 1px ridge black;
+border-radius: 15px;
+padding: 10px;
+margin-top: 8em;
+}
+
+.login_form button{
+	margin-top: 0.5em;
+}
+
+.form-popup {
+  display: none;
+}
+
+.login_form img{
+	width:5%;
+	height: auto;
+	position: absolute;
+  left:916px;
+  top: 52.5em;
+  z-index: 2;
+}
+
+/*css til nav baren*/
+#navbar{
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar button{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*css til shop siden*/
+#shop{
+  margin-top: 3.3em;
+}
+
+.shop{
+border: 1px solid black;
+margin-top: 3.3em;
+}
+.ordre{
+  border:1px solid black;
+  margin-top: 3.3em;
+}
+
+.frontpage table, th, td {
+
+  border-collapse: collapse;
+  padding: 3px 3px;
+}
