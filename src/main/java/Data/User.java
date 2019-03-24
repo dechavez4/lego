@@ -11,32 +11,34 @@ package Data;
  */
 public class User {
 
-    private String username;
     private String email;
     private String password;
-    private Orders cart;
+    private boolean admin;
 
-    public User(String username, String email, String password) {
-        this.username = username;
+    public User(String email, boolean admin) {
         this.email = email;
-        this.password = password;
+        this.admin = admin;
     }
 
+    
     public String getEmail() {
         return email;
     }
-
-    public Orders getCart() {
-        return cart;
+    
+    public boolean getAdmin(){
+        return admin;
     }
 
-    public void setCart(Orders cart) {
-        this.cart = cart;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+    
     @Override
     public String toString() {
-        return "User{" + "username=" + username + ", email=" + email + ", password=" + password + ", cart=" + cart + '}';
+        return "User{" + "email=" + email + ", password=" + password + ", admin=" + admin + '}';
     }
-
 }

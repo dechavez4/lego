@@ -17,11 +17,11 @@ public class DBConnector {
         private Connection connection = null;
 
     //Constants
-    private static final String IP = "178.62.232.91";
+    private static final String IP = "104.248.89.116";
     private static final String PORT = "3306";
-    public static final String DATABASE = "cupcake";
-    private static final String USERNAME = "testuser2";
-    private static final String PASSWORD = "password123";
+    public static final String DATABASE = "legohouse";
+    private static final String USERNAME = "testuser";
+    private static final String PASSWORD = "bkamager";
 
     public DBConnector() throws Exception {
         Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
